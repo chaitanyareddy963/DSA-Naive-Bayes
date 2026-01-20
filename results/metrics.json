@@ -1,0 +1,36 @@
+{
+  "metrics": {
+    "accuracy": 0.8342,
+    "precision": 0.7055,
+    "recall": 0.5065,
+    "f1_score": 0.5897,
+    "positive_class": ">50K",
+    "confusion_matrix": [
+      [
+        4657,
+        324
+      ],
+      [
+        756,
+        776
+      ]
+    ],
+    "class_names": [
+      "<=50K",
+      ">50K"
+    ]
+  },
+  "hashmap_stats": {
+    "capacity": 512,
+    "size": 199,
+    "load_factor": 0.388671875,
+    "collisions": 9004,
+    "probes": 545216,
+    "resizes": 3
+  },
+  "timings": {
+    "Preprocessing": 0.425299,
+    "Training": 0.46673,
+    "Prediction": 0.202264
+  }
+}

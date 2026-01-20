@@ -1,0 +1,4 @@
+# Core implementation dependencies: None
+# This project uses only the Python Standard Library (math, csv, random, etc.)
+# 
+# For optional benchmarking, see: requirements_benchmark.txt

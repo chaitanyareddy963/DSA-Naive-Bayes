@@ -1,0 +1,66 @@
+
+==================================================
+Naive Bayes Classifier - Final Submission
+==================================================
+[INFO] Arguments: {'data_path': 'data/adult.csv', 'use_uci_split': False, 'seed': 42, 'test_ratio': 0.2, 'alpha': 1.0, 'var_epsilon': 1e-06, 'force_categorical': '', 'force_numeric': '', 'output_dir': 'results', 'no_plots': False}
+
+==================================================
+1. Data Loading
+==================================================
+[INFO] Loading data from data/adult.csv
+[INFO] Random split (0.2): 26048 train, 6513 test
+
+==================================================
+2. Feature Typing
+==================================================
+[INFO] Label column: income (index 14)
+[INFO] Numeric features (6): ['age', 'fnlwgt', 'education.num', 'capital.gain', 'capital.loss', 'hours.per.week']
+[INFO] Categorical features (8): ['workclass', 'education', 'marital.status', 'occupation', 'relationship', 'race', 'sex', 'native.country']
+
+==================================================
+3. Preprocessing
+==================================================
+[INFO] Preprocessing complete.
+[INFO] Categorical cardinalities: [9, 16, 7, 15, 6, 5, 2, 42]
+[INFO] Classes: ['<=50K', '>50K']
+
+==================================================
+4. Training Model
+==================================================
+[INFO] Training complete.
+[INFO] Internal Hash Map Stats (Categorical Counts):
+[INFO]   Capacity: 512
+[INFO]   Size: 199
+[INFO]   Load Factor: 0.3887
+[INFO]   Collisions: 5661
+[INFO]   Probes: 428350
+[INFO]   Resizes: 3
+
+==================================================
+5. Evaluation
+==================================================
+==================================================
+CLASSIFICATION REPORT
+==================================================
+
+Confusion Matrix:
+Actual\Pred <=50K       >50K        
+------------------------------------
+<=50K       4657        324         
+>50K        756         776         
+
+Accuracy:  0.8342 (83.42%)
+Precision (class '>50K'): 0.7055
+Recall    (class '>50K'): 0.5065
+F1 Score  (class '>50K'): 0.5897
+==================================================
+
+Timing Summary:
+  Data Loading: 0.1079s
+  Preprocessing: 0.3826s
+  Training: 0.2239s
+  Prediction: 0.0831s
+
+==================================================
+6. Saving Results
+==================================================
